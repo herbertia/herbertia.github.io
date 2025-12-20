@@ -77,6 +77,9 @@ body {
     align-items: center;
     text-decoration: none;
     transition: var(--transition);
+    color: var(--blue-primary);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .nav-logo-img {

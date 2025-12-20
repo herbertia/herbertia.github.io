@@ -570,7 +570,7 @@ body {
 
 /* Languages Section */
 .languages {
-    background: var(--bg-white);
+    background: var(--bg-light);
 }
 
 .languages-title {
@@ -587,11 +587,24 @@ body {
     max-width: 400px;
 }
 
+.languages-card {
+    background: white;
+    padding: 28px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.languages-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
 .languages-content {
     display: flex;
     gap: 60px;
     justify-content: flex-start;
-    margin-bottom: 32px;
 }
 
 .language-item {
@@ -1014,6 +1027,10 @@ body.keyboard-nav *:focus {
     .languages-content {
         flex-direction: column;
         gap: 24px;
+    }
+
+    .languages-card {
+        padding: 24px;
     }
 
     .title-accent-bar {

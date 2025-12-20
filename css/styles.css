@@ -568,6 +568,77 @@ body {
     border-color: var(--blue-primary);
 }
 
+/* Languages Section */
+.languages {
+    background: var(--bg-white);
+}
+
+.languages-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-accent-bar {
+    flex: 1;
+    height: 2px;
+    background: var(--bg-grey);
+    max-width: 400px;
+}
+
+.languages-content {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.language-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.progress-bar {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.progress-segment {
+    width: 24px;
+    height: 16px;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.progress-segment.filled {
+    background: var(--blue-primary);
+}
+
+.progress-segment.unfilled {
+    background: var(--bg-grey);
+}
+
+.proficiency-level {
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.languages-separator {
+    width: 100%;
+    height: 1px;
+    background: var(--text-dark);
+    max-width: 500px;
+}
+
 /* Open Source Section */
 .opensource-grid {
     display: grid;
@@ -938,6 +1009,15 @@ body.keyboard-nav *:focus {
 
     .skill-category {
         padding: 24px;
+    }
+
+    .languages-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .title-accent-bar {
+        max-width: 200px;
     }
 
     .opensource-grid {

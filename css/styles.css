@@ -387,6 +387,10 @@ body {
     align-items: flex-start;
 }
 
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
 .timeline-marker {
     position: absolute;
     left: -46px;

@@ -521,10 +521,9 @@ body {
 }
 
 .skills-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem; /* space between cards */
-  flex-wrap: nowrap; /* keeps all 4 on one line */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .skill-category {
@@ -534,7 +533,6 @@ body {
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     animation: fadeIn 0.8s ease-out;
-    flex: 1;
     min-width: 0;
 }
 

@@ -279,20 +279,6 @@ body {
     outline-offset: 2px;
 }
 
-.social-link-labeled {
-    gap: 8px !important;
-    padding: 8px 14px !important;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text-medium);
-    background: rgba(40, 68, 157, 0.05);
-    border-radius: 999px !important;
-}
-
-.social-link-labeled span {
-    line-height: 1;
-}
-
 .hero-flags {
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 12px;
